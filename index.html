@@ -1,237 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anish Choudhary | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anish Choudhary | Portfolio</title>
 
-<style>
-:root {
-    --bg: #F7F7FF;
-    --text: #27187E;
-    --card: rgba(255,255,255,0.7);
-    --primary: #27187E;
-    --accent: #5a4bff;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #F7F7FF;
+            color: #27187E;
+        }
 
-.dark {
-    --bg: #0f0f1a;
-    --text: #ffffff;
-    --card: rgba(28,28,46,0.8);
-}
+        header {
+            background: linear-gradient(135deg, #27187E, #5a4bff);
+            color: #F7F7FF;
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
-}
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-}
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
 
-/* Navbar */
-nav {
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(10px);
-    background: rgba(255,255,255,0.6);
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    z-index: 1000;
-}
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
 
-nav a {
-    text-decoration: none;
-    color: var(--text);
-    font-weight: bold;
-}
+        .profile {
+            text-align: center;
+            background: none;
+            box-shadow: none;
+        }
 
-/* Hero */
-header {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    color: white;
-}
+        .profile img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 5px solid #27187E;
+            object-fit: cover;
+        }
 
-header h1 {
-    font-size: 42px;
-}
+        h2 {
+            border-left: 5px solid #27187E;
+            padding-left: 10px;
+        }
 
-#typing {
-    font-size: 20px;
-}
+        .contact a,
+        .social a {
+            display: inline-block;
+            margin: 10px 10px 0 0;
+            padding: 10px 15px;
+            background: #27187E;
+            color: #F7F7FF;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
 
-/* Sections */
-section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 25px;
-    border-radius: 15px;
-    background: var(--card);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.6s;
-}
+        .contact a:hover,
+        .social a:hover {
+            background: #5a4bff;
+            transform: translateY(-2px);
+        }
 
-section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
+        footer {
+            background: #27187E;
+            color: #F7F7FF;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
 
-/* Profile */
-.profile {
-    text-align: center;
-    background: none;
-    box-shadow: none;
-}
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 26px;
+            }
 
-.profile img {
-    width: 170px;
-    border-radius: 50%;
-    border: 5px solid var(--primary);
-}
-
-/* Buttons */
-.btn {
-    padding: 10px 15px;
-    background: var(--primary);
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: var(--accent);
-    transform: translateY(-3px);
-}
-
-/* Skills */
-.bar {
-    background: #ddd;
-    height: 8px;
-    border-radius: 10px;
-}
-
-.progress {
-    height: 8px;
-    background: var(--primary);
-    border-radius: 10px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: var(--primary);
-    color: white;
-}
-
-/* Toggle */
-.toggle {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    background: var(--primary);
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-</style>
+            section {
+                margin: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
 <header>
     <h1>Anish Choudhary</h1>
-    <p id="typing"></p>
-    <a class="btn" href="#contact">Hire Me</a>
+    <p>Student | Learner | Future Developer 🚀</p>
 </header>
 
 <section class="profile">
-    <img src="profile.jpg">
+    <img src="profile.jpg" alt="Profile Photo">
 </section>
 
-<section id="about">
+<section>
     <h2>About Me</h2>
-    <p>I am a passionate learner and future developer building my journey in tech 🚀</p>
+    <p>
+        Hi! I’m Anish Choudhary. I’m passionate about learning new skills, building things, 
+        and improving myself every day. This is my personal website where you can know more about me.
+    </p>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-
-    HTML
-    <div class="bar"><div class="progress" style="width:80%"></div></div>
-
-    CSS
-    <div class="bar"><div class="progress" style="width:70%"></div></div>
-
-    JavaScript
-    <div class="bar"><div class="progress" style="width:60%"></div></div>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-    <p>🚀 Portfolio Website (this one)</p>
-    <p>More coming soon...</p>
-</section>
-
-<section id="contact">
+<section class="contact">
     <h2>Contact</h2>
-    <a class="btn" href="mailto:anishc2005@gmail.com">Email</a>
+    <a href="mailto:anishc2005@gmail.com">📧 Email</a>
+    <a href="#">📞 Phone</a>
+</section>
+
+<section class="social">
+    <h2>Social Links</h2>
+    <a href="https://www.instagram.com/anish.choudhary_2005?igsh=MTUzN2FrMWpmYjRiMA==" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/share/18E2W653Hs/" target="_blank">Facebook</a>
 </section>
 
 <footer>
-    © 2026 Anish Choudhary
+    © 2026 Anish Choudhary | All Rights Reserved
 </footer>
-
-<div class="toggle" onclick="toggleMode()">🌙</div>
-
-<script>
-// Typing
-const texts = ["Student", "Future Developer", "Tech Enthusiast 🚀"];
-let i=0,j=0;
-function type(){
-    document.getElementById("typing").innerText=texts[i].slice(0,j++);
-    if(j>texts[i].length){i=(i+1)%texts.length;j=0;}
-    setTimeout(type,100);
-}
-type();
-
-// Dark mode
-function toggleMode(){
-    document.body.classList.toggle("dark");
-}
-
-// Scroll animation
-const sections = document.querySelectorAll("section");
-window.addEventListener("scroll",()=>{
-    sections.forEach(sec=>{
-        const top = sec.getBoundingClientRect().top;
-        if(top < window.innerHeight - 100){
-            sec.classList.add("show");
-        }
-    });
-});
-</script>
 
 </body>
 </html>
