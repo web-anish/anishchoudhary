@@ -3,82 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Personal Website</title>
+    <title>Anish Choudhary | Portfolio</title>
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             background: #F7F7FF;
             color: #27187E;
         }
 
         header {
-            background: #27187E;
+            background: linear-gradient(135deg, #27187E, #5a4bff);
             color: #F7F7FF;
-            padding: 30px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
         section {
-            padding: 40px 20px;
             max-width: 900px;
-            margin: auto;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
         .profile {
             text-align: center;
+            background: none;
+            box-shadow: none;
         }
 
         .profile img {
-            width: 150px;
-            height: 150px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
+            border: 5px solid #27187E;
             object-fit: cover;
-            border: 4px solid #27187E;
         }
 
         h2 {
-            margin-top: 40px;
-            border-bottom: 2px solid #27187E;
-            display: inline-block;
-            padding-bottom: 5px;
+            border-left: 5px solid #27187E;
+            padding-left: 10px;
         }
 
-        .contact a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: #27187E;
-            font-weight: bold;
-        }
-
+        .contact a,
         .social a {
-            margin: 0 10px;
+            display: inline-block;
+            margin: 10px 10px 0 0;
+            padding: 10px 15px;
+            background: #27187E;
+            color: #F7F7FF;
             text-decoration: none;
-            font-size: 18px;
-            color: #27187E;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .contact a:hover,
+        .social a:hover {
+            background: #5a4bff;
+            transform: translateY(-2px);
         }
 
         footer {
             background: #27187E;
             color: #F7F7FF;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             margin-top: 40px;
         }
 
         @media (max-width: 600px) {
             header h1 {
-                font-size: 24px;
+                font-size: 26px;
+            }
+
+            section {
+                margin: 20px;
             }
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>Anish Choudhary</h1>
-    <p>Welcome to my personal website</p>
+    <p>Student | Learner | Future Developer 🚀</p>
 </header>
 
 <section class="profile">
@@ -88,25 +111,25 @@
 <section>
     <h2>About Me</h2>
     <p>
-        Hi! I’m Your Anish Choudhary. This is my personal website where I share a little about myself.
-        Please have a look on my website & You can reach me through the site.
+        Hi! I’m Anish Choudhary. I’m passionate about learning new skills, building things, 
+        and improving myself every day. This is my personal website where you can know more about me.
     </p>
 </section>
 
 <section class="contact">
     <h2>Contact</h2>
-    <a href="mailto:anishc2005@gmail.com">📧 Email: anishc2005@gmail.com</a>
-    <a href="tel:Not Available">📞 Phone: +91 Not Available</a>
+    <a href="mailto:anishc2005@gmail.com">📧 Email</a>
+    <a href="#">📞 Phone</a>
 </section>
 
 <section class="social">
     <h2>Social Links</h2>
     <a href="https://www.instagram.com/anish.choudhary_2005?igsh=MTUzN2FrMWpmYjRiMA==" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/share/18E2W653Hs/" target="_blank">LinkedIn</a>
+    <a href="https://www.facebook.com/share/18E2W653Hs/" target="_blank">Facebook</a>
 </section>
 
 <footer>
-    © 2026 Anish Choudhary
+    © 2026 Anish Choudhary | All Rights Reserved
 </footer>
 
 </body>
